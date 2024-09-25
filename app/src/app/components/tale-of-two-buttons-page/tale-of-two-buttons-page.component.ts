@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../../service/data.service';
 
 @Component({
   selector: 'app-tale-of-two-buttons-page',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './tale-of-two-buttons-page.component.scss'
 })
 export class TaleOfTwoButtonsPageComponent {
-
+  constructor(private dataService: DataService) {
+    this.dataService.currentPageUrlName = 'tale-of-two-buttons';
+  }
 }
