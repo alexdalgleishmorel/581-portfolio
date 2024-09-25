@@ -1,0 +1,8 @@
+<div class="grid-display" (click)="navigateTo(project.urlName)">
+    <div class="title">
+        {{project.displayName}}
+    </div>
+    <div class="image-container">
+        <img [src]="project.urlName.concat('.png')">
+    </div>
+</div>

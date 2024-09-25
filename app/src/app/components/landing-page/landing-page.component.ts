@@ -1,38 +1,44 @@
 import { Component } from '@angular/core';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
-import { MatToolbarModule } from '@angular/material/toolbar';
 
-import { DataService, Page } from '../../service/data.service';
+import { DataService, Project } from '../../service/data.service';
+import { ProjectSlideComponent } from "../project-slide/project-slide.component";
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
   imports: [
-    MatToolbarModule,
-    MatFormFieldModule,
-    MatInputModule,
+    MatButtonModule,
     MatIconModule,
-    MatSelectModule,
-    ReactiveFormsModule,
-  ],
+    ProjectSlideComponent,
+],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
-  public pageNames: Page[];
-  public pageSelectFormControl = new FormControl();
+  public projectIndex: number = 0;
 
-  constructor(private dataService: DataService, private router: Router) {
-    this.pageNames = this.dataService.pages;
-    this.pageSelectFormControl.setValue(null);
-    this.pageSelectFormControl.valueChanges.subscribe(value => {
-      this.dataService.currentPageUrlName = value;
-      this.router.navigate([value]);
-    });
+  constructor(private dataService: DataService, private router: Router) {}
+
+  getDisplayedProject(): Project {
+    return this.dataService.projects[this.projectIndex];
+  }
+
+  decrementProjectIndex() {
+    if (this.projectIndex > 0) {
+      this.projectIndex -= 1;
+    }
+  }
+
+  canIncrement() {
+    return this.projectIndex < this.dataService.projects.length-1;
+  }
+
+  incrementProjectIndex() {
+    if (this.projectIndex < this.dataService.projects.length-1) {
+      this.projectIndex += 1;
+    }
   }
 }

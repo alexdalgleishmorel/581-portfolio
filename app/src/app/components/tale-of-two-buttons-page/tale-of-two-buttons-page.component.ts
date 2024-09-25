@@ -9,7 +9,5 @@ import { DataService } from '../../service/data.service';
   styleUrl: './tale-of-two-buttons-page.component.scss'
 })
 export class TaleOfTwoButtonsPageComponent {
-  constructor(private dataService: DataService) {
-    this.dataService.currentPageUrlName = 'tale-of-two-buttons';
-  }
+  constructor(private dataService: DataService) {}
 }

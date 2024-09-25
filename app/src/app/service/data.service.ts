@@ -4,18 +4,19 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
-  public pages: Page[] = [
+  public projects: Project[] = [
     {
       urlName: 'tale-of-two-buttons',
       displayName: 'A Tale of Two Buttons',
+      displayPhotoName: 'tale-of-two-buttons'
     },
   ];
-  public currentPageUrlName: string | null = null;
 
   constructor() {}
 }
 
-export interface Page {
+export interface Project {
   urlName: string;
   displayName: string;
+  displayPhotoName: string;
 }
