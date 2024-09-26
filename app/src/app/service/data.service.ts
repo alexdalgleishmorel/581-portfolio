@@ -8,7 +8,7 @@ export class DataService {
     {
       urlName: 'tale-of-two-buttons',
       displayName: 'A Tale of Two Buttons',
-      displayPhotoName: 'tale-of-two-buttons'
+      displayPhotoName: 'tale-of-two-buttons/tale-of-two-buttons.png'
     },
   ];
 
