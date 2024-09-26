@@ -113,10 +113,113 @@
 
     <div class="section">
         <h3 class="title">10 Refined Sketches</h3>
+        <div class="flex-row">
+            <img width="200px" src="tale-of-two-buttons/refined-sketches/alex1.jpg">
+            <p>
+                Alex 1
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                Alex 2
+            </p>
+            <img width="200px" src="tale-of-two-buttons/refined-sketches/alex2.jpg">
+        </div>
+        <div class="flex-row">
+            <img width="200px" src="tale-of-two-buttons/refined-sketches/alex3.jpg">
+            <p>
+                Alex 3
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                Alex 4
+            </p>
+            <img width="200px" src="tale-of-two-buttons/refined-sketches/alex4.jpg">
+        </div>
+        <div class="flex-row">
+            <img width="200px" src="tale-of-two-buttons/initial-sketches/carson1.jpg">
+            <p>
+                Carson 1
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                Carson 2
+            </p>
+            <img width="200px" src="tale-of-two-buttons/initial-sketches/carson2.jpg">
+        </div>
+        <div class="flex-row">
+            <img width="200px" src="tale-of-two-buttons/initial-sketches/carson3.jpg">
+            <p>
+                Carson 3
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                Guilherme 1
+            </p>
+            <img width="200px" src="tale-of-two-buttons/initial-sketches/gui1.jpg">
+        </div>
+        <div class="flex-row">
+            <img width="200px" src="tale-of-two-buttons/initial-sketches/gui2.jpg">
+            <p>
+                Guilherme 2
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                Guilherme 3
+            </p>
+            <img width="200px" src="tale-of-two-buttons/initial-sketches/gui3.jpg">
+        </div>
     </div>
 
     <div class="section">
         <h3 class="title">Video + Final Product</h3>
+        <iframe id="youtubeVideo" width="90%" height="300px" src="https://www.youtube.com/embed/QoeoyLg-N_g" frameborder="0" allowfullscreen></iframe>
+        <h5>Final implementation</h5>
+        <p>
+            Our final implementation of the project involved 4 quadrants. Each quadrant rotated between 3
+            different states. The first being that Carson's figure is not present, the second being that
+            the figure is present but not animating, and the last being an animated version of the figure.
+        </p>
+        <h5>Division of work</h5>
+        <p>
+            The work for this was delegated amoungst the 3 of us in the following way: Guilherme was responsible
+            for drawing all images and animations, while myself and Carson handled developing the design and
+            functionality of the app where these images live. In terms of development work, I handled creating the quadrants
+            and the general data context shared between all components. Using this data context, Carson then implemented the
+            draggable figure and the clickable animation button.
+        </p>
+        <h5>How does our application fit the objective?</h5>
+        <p>
+            The initial goal of this project was to capture the essence of a team member's personality, with
+            the limitation of interacting with just 2 buttons. In this implementation, we've achieved a medium
+            of demonstrating an all-encompassing display of Carson's personality, without having to sacrifice
+            important aspects of his self.
+            <br/>
+            Beyond displaying many different aspects, the 2 buttons (the draggable character and the animation button),
+            provide an interaction that is inviting to the user, and beckons people to interact with the interface. Upon
+            interaction, Carson's self is immediately revealed and it makes the user want to see each aspect based on the
+            entertaining animation.
+        </p>
+        <h5>What worked and what didn't work</h5>
+        <p>
+            One aspect that worked quite well with this implementation was the idea of compartmentalized sectors, but with
+            the ability to transcend them as the core interaction. This provided a way of navigating several different topics
+            while maintaining an overarching view that was easy to keep track of. The figure also snapping into place for the
+            user helped to ensure that the state of the interface never appeared too cluttered.
+            <br/><br/>
+            An aspect that didn't quite work was that both buttons were based on the mouse's location. One button was draggable,
+            thus always tracking the mouses location. Similarly, the animation button tracked the mouse as it moved. As a result,
+            this left both interactions in close proximity to each other, sometimes resulting in a cluttered display where it may
+            be tricky for the user to quickly interact with one button without potentially pressing the other.
+            <br/><br/>
+            One way of ammending this issue would be to use a piecewise-button approach like in several of our initial and refined
+            sketches. The animation button could be placed in the center of the screen, intersecting all 4 quadrants. This way, its
+            location would always be easily accessible to the user, which would allow them to better discern the two interactions of the app.
+        </p>
     </div>
 
     <div class="section">
