@@ -28,7 +28,7 @@
     <div class="section">
         <h3 class="title">10 Concept Sketches</h3>
         <div class="flex-row">
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/initial-sketches/food-prep.jpg', 'Food prep')">
                 <img width="200px" src="tale-of-two-buttons/initial-sketches/food-prep.jpg">
                 <div class="title">Food prep</div>
             </div>
@@ -44,13 +44,13 @@
                 game where the user would help him exercise, and provide statistics on his strength
                 as the user exerts his energy.
             </p>
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/initial-sketches/bicep-curls.jpg', 'Bicep curl')">
                 <img width="200px" src="tale-of-two-buttons/initial-sketches/bicep-curls.jpg">
                 <div class="title">Bicep curl</div>
             </div>
         </div>
         <div class="flex-row">
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/initial-sketches/activity-quadrants.jpg', 'Activity quadrants')">
                 <img width="200px" src="tale-of-two-buttons/initial-sketches/activity-quadrants.jpg">
                 <div class="title">Acitivity quadrants</div>
             </div>
@@ -66,13 +66,13 @@
                 intention was the break the barrier of having all the quadrants separated from each other.
                 This would provide an interaction that spanned across all quadrants.
             </p>
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/initial-sketches/piecewise-button.jpg', 'Piecewise button')">
                 <img width="200px" src="tale-of-two-buttons/initial-sketches/piecewise-button.jpg">
                 <div class="title">Piecewise button</div>
             </div>
         </div>
         <div class="flex-row">
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/initial-sketches/multi-path-game.jpg', 'Multi-path game')">
                 <img width="200px" src="tale-of-two-buttons/initial-sketches/multi-path-game.jpg">
                 <div class="title">Multi-path game</div>
             </div>
@@ -89,13 +89,13 @@
                 sports, in which I thought we could showcase some aspect of athletics by letting the user
                 dress a character representing Carson in a variety of sports jerseys.
             </p>
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/initial-sketches/clothing.jpg', 'Clothing swap')">
                 <img width="40%" src="tale-of-two-buttons/initial-sketches/clothing.jpg">
                 <div class="title">Clothing swap</div>
             </div>
         </div>
         <div class="flex-row">
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/initial-sketches/haptic.jpg', 'Haptic feedback')">
                 <img width="40%" src="tale-of-two-buttons/initial-sketches/haptic.jpg">
                 <div class="title">Haptic feedback</div>
             </div>
@@ -111,13 +111,13 @@
                 years of life too. By allowing the user to navigate forward and backward in time, they could see
                 how Carson's interests have shifted over the years to better understand his personality.
             </p>
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/initial-sketches/quadrant-with-time-flow.jpg', 'Quadrants with time')">
                 <img width="40%" src="tale-of-two-buttons/initial-sketches/quadrant-with-time-flow.jpg">
                 <div class="title">Quadrants with time</div>
             </div>
         </div>
         <div class="flex-row">
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/initial-sketches/time-based-quadrants.jpg', 'Time-based content')">
                 <img width="40%" src="tale-of-two-buttons/initial-sketches/time-based-quadrants.jpg">
                 <div class="title">Time-based content</div>
             </div>
@@ -134,7 +134,7 @@
                 over time, and will continue to do so. The idea here was to express to the user how it has changed,
                 by allowing them to view what was important to Carson in the past, versus in the present day.
             </p>
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/initial-sketches/timeline.jpg', 'Timeline')">
                 <img width="40%" src="tale-of-two-buttons/initial-sketches/timeline.jpg">
                 <div class="title">Timeline</div>
             </div>
@@ -144,7 +144,7 @@
     <div class="section">
         <h3 class="title">10 Refined Sketches</h3>
         <div class="flex-row">
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/refined-sketches/alex1.jpg', 'Alex refined sketch 1')">
                 <img width="40%" src="tale-of-two-buttons/refined-sketches/alex1.jpg">
                 <div class="title">Alex refined sketch 1</div>
             </div>
@@ -164,13 +164,13 @@
                 idea was an attempt to incentivize the iteractions through the piecewise button, ensuring all elements of the page
                 that we wanted to be visited were actually interacted with.
             </p>
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/refined-sketches/alex2.jpg', 'Alex refined sketch 2')">
                 <img width="40%" src="tale-of-two-buttons/refined-sketches/alex2.jpg">
                 <div class="title">Alex refined sketch 2</div>
             </div>
         </div>
         <div class="flex-row">
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/refined-sketches/alex3.jpg', 'Alex refined sketch 3')">
                 <img width="40%" src="tale-of-two-buttons/refined-sketches/alex3.jpg">
                 <div class="title">Alex refined sketch 3</div>
             </div>
@@ -188,13 +188,13 @@
                 4 sectors in some way. In this sketch, that is achieved by having a character representing Carson be draggable, and
                 used as a medium for navigating the different sectors.
             </p>
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/refined-sketches/carson.jpg', 'Carson refined sketch')">
                 <img width="40%" src="tale-of-two-buttons/refined-sketches/carson.jpg">
                 <div class="title">Carson refined sketch</div>
             </div>
         </div>
         <div class="flex-row">
-            <div class="image-container">
+            <div class="image-container" (click)="openImageDialog('tale-of-two-buttons/refined-sketches/gui.jpg', 'Guilherme refined sketch')">
                 <img width="40%" src="tale-of-two-buttons/refined-sketches/gui.jpg">
                 <div class="title">Guilherme refined sketch</div>
             </div>
