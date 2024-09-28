@@ -48,3 +48,17 @@
 
     gap: 20px;
 }
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2px;
+
+    .title {
+        font-size: small;
+        color: #666;
+    }
+}
