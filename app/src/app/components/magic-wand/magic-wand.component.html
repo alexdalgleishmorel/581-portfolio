@@ -1,0 +1,279 @@
+<div class="content">
+    <h1>Magic Wand</h1>
+
+    <div class="section">
+        <h3 class="title">Description</h3>
+        <p>
+            paragraph
+
+            <br/><br/>
+
+            paragraph
+
+            <br/><br/>
+
+            paragragh
+        </p>
+    </div>
+
+    <div class="section">
+        <h3 class="title">10 Initial Sketches</h3>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('magic-wand/initial-sketches/ini1.jpg', 'Facial inputs')">
+                <img width="200px" src="magic-wand/initial-sketches/ini1.jpg">
+                <div class="title">Facial inputs</div>
+            </div>
+            <p>
+                This idea was to leverage mobile phone cameras by changing expression. This would provide users with a hands-free
+                way of unlocking their phone. To maintain security, the facial expressions need to be differentiable and deliberate.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This idea was to shake the phone to unlock. As a means to ensure that unlocks did not occur unintentionally, I added
+                the requirement that shaking must occur at a sequence of various heights.
+            </p>
+            <div class="image-container" (click)="openImageDialog('magic-wand/initial-sketches/ini2.jpg', 'Shaking')">
+                <img width="200px" src="magic-wand/initial-sketches/ini2.jpg">
+                <div class="title">Shaking</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('magic-wand/initial-sketches/ini3.jpg', 'Color pattern')">
+                <img width="200px" src="magic-wand/initial-sketches/ini3.jpg">
+                <div class="title">Color pattern</div>
+            </div>
+            <p>
+                This idea built off the concept of phone unlocks based on facial expression. With this idea, the user is prompted
+                with a sequence of colors, and their facial expression must react correctly to the color.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This idea explores the explores someone playing an instrument, specifically a violin. The user would pretend to
+                hold it in one hand, and the phone would act as the bow. The unique movement of the bow would serve as the pattern
+                that needs to match to unlock the phone.
+            </p>
+            <div class="image-container" (click)="openImageDialog('magic-wand/initial-sketches/ini4.jpg', 'Instrument simulation')">
+                <img width="200px" src="magic-wand/initial-sketches/ini4.jpg">
+                <div class="title">Instrument simulation</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('magic-wand/initial-sketches/ini5.jpg', 'Walking pattern')">
+                <img width="200px" src="magic-wand/initial-sketches/ini5.jpg">
+                <div class="title">Walking pattern</div>
+            </div>
+            <p>
+                This idea involved the user having to walk in a certain pattern around the area they are in. Once the sequence
+                of GPS movements matches the pre-defined pattern, the phone would unlock.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This idea involved the user having to draw an image in real time. The phone camera would observe the user
+                performing the draw, and once they had drawn the image in the correct sequence, the phone would unlock.
+            </p>
+            <div class="image-container" (click)="openImageDialog('magic-wand/initial-sketches/ini6.jpg', 'Pattern drawing')">
+                <img width="40%" src="magic-wand/initial-sketches/ini6.jpg">
+                <div class="title">Pattern drawing</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('magic-wand/initial-sketches/ini7.jpg', 'Maintained speed')">
+                <img width="40%" src="magic-wand/initial-sketches/ini7.jpg">
+                <div class="title">Maintained speed</div>
+            </div>
+            <p>
+                For this idea, the phone would unlock once it maintained itself within a certain rate of speed for a certain
+                period of time. The user could customize both what that rate of speed is, and for how long it is required to be
+                maintained.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                For this idea, the phone simply needed to be placed onto some sort of device dock, at which point the phone would unlock.
+                Once the phone re-locks, the device would need to be returned to the dock to unlock again.
+            </p>
+            <div class="image-container" (click)="openImageDialog('magic-wand/initial-sketches/ini8.jpg', 'Docking the device')">
+                <img width="40%" src="magic-wand/initial-sketches/ini8.jpg">
+                <div class="title">Docking the device</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('magic-wand/initial-sketches/ini9.jpg', 'Temperature change')">
+                <img width="40%" src="magic-wand/initial-sketches/ini9.jpg">
+                <div class="title">Temperature change</div>
+            </div>
+            <p>
+                For this idea, the user needs to expose their phone to a certain temperature to unlock. Once the phone detected
+                the temperature for a certain period of time, the phone would unlock.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                For this idea, the phone would need to be provided a certain audio sequence from the user to unlock. If the
+                dictation of that audio matches the preset password, the phone would unlock.
+            </p>
+            <div class="image-container" (click)="openImageDialog('magic-wand/initial-sketches/ini10.jpg', 'Audio sequence')">
+                <img width="40%" src="magic-wand/initial-sketches/ini10.jpg">
+                <div class="title">Audio sequence</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="title">10 Refined Sketches</h3>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('magic-wand/refined-sketches/ref1.jpg', 'Alex refined sketch 1')">
+                <img width="40%" src="magic-wand/refined-sketches/ref1.jpg">
+                <div class="title">Alex refined sketch 1</div>
+            </div>
+            <p>
+                This built off the initial sketch relating to playing an instrument. This further explored how moving the bow
+                of the violin would work. The movement of the phone would be mapped to a graph representing the original movemenent
+                set by the user, taking into account changes in x, y and z coordinates of the device.
+                This idea peaked our groups interest as the motion of a person playing something is something that is easily unique 
+                between people, while the motion itself can be easily replicated by the person doing it from muscle memory. This provided 
+                a good basis for that movement to be used as a password as well.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This sketch further expands on the concept of playing an instrument. The idea here is that while the user is
+                moving the bow, there would be a certain amount of audio feedback so that the user can tell their input is being
+                registered, and provide a more enjoyable experience. Also, if the user makes a movement of the bow that falls outside
+                the expected sequence, an audible noise could be queued so they recognize they should restart and try again.
+            </p>
+            <div class="image-container" (click)="openImageDialog('magic-wand/refined-sketches/ref2.jpg', 'Alex refined sketch 2')">
+                <img width="40%" src="magic-wand/refined-sketches/ref2.jpg">
+                <div class="title">Alex refined sketch 2</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('magic-wand/refined-sketches/ref3.jpg', 'Alex refined sketch 3')">
+                <img width="40%" src="magic-wand/refined-sketches/ref3.jpg">
+                <div class="title">Alex refined sketch 3</div>
+            </div>
+            <p>
+                This was the first refined sketch that led to the final magic wand idea. This idea was derived from the ideation relating
+                to playing the violin with the phone as the bow. While thinking of how playing the instrument with the phone would look
+                and feel, it looked and felt like I was casting some sort of spell. From that, this idea emerged where the user would in fact
+                have to cast a spell; where they would have to both say the spell and make the motion with their phone as if it's a wand.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This sketch delved further into the magic wand unlock functionality. Specifically, we recognized that the first of the
+                two actions would be to verbally state the name of the spell, as part of casting it. Therefore, the user would need to
+                have the ability to choose between a set of spell names. Whichever one they chose would be the required word to exclaim
+                when unlocking the phone. The sketch provided an initial concept of how that interface would look, with the current word
+                used for unlock at the top of the screen, and other words that could be used displayed below, as selectable items.
+            </p>
+            <div class="image-container" (click)="openImageDialog('magic-wand/refined-sketches/ref8.jpg', 'Alex refined sketch 4')">
+                <img width="40%" src="magic-wand/refined-sketches/ref8.jpg">
+                <div class="title">Alex refined sketch 4</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('magic-wand/refined-sketches/ref9.jpg', 'Alex refined sketch 5')">
+                <img width="40%" src="magic-wand/refined-sketches/ref9.jpg">
+                <div class="title">Alex refined sketch 5</div>
+            </div>
+            <p>
+                This sketch delved into the ability to set which gesture would be used for the magic functionality. The gesture
+                refers to the pattern the user would need to make it the air with their phone - this acts as the physical element
+                of casting a spell. For a consistent user experience across pages, this sketch users the same framework as the page
+                used to update the name of the spell, where the current gesture being used is displayed at the top of the screen, and
+                the options for other gestures that can be used are shown at the bottom.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This sketch ideated about added functionality we could introduce to the user experience that would make it easier
+                to use and understand. Specifically, the idea was to have easily recognizable way to determine that the user cast
+                the wrong spell. By having the phone vibrate while the user is making an incorrect motion while unlocking, they can
+                quickly recognize that they need to restart and try again.
+            </p>
+            <div class="image-container" (click)="openImageDialog('magic-wand/refined-sketches/ref10.jpg', 'Alex refined sketch 6')">
+                <img width="40%" src="magic-wand/refined-sketches/ref10.jpg">
+                <div class="title">Alex refined sketch 6</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('magic-wand/refined-sketches/hera1.jpg', 'Hera refined sketch 1')">
+                <img width="40%" src="magic-wand/refined-sketches/hera1.jpg">
+                <div class="title">Hera refined sketch 1</div>
+            </div>
+            <p>
+                Hera's refined sketch relating to the magic wand also went down the path of helping the user to understand
+                whether their input was being processed, and whether the spell they were casting was the correct sequence. By
+                providing a visual that changes color based on the correctness of the action, the user can see in real-time if
+                the action they are making with their wand needs to be retried.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This refined sketch by Hera was when we were still at the ideation phase for playing an instrument. Again, it
+                explored how the user could easily measure the progress and correctness of the sequence they were inputting. By
+                showing visual indicatators when the wrong key is pressed, the user knows right away they should restart the sequence
+                if they want to successfully unlock their device.
+            </p>
+            <div class="image-container" (click)="openImageDialog('magic-wand/refined-sketches/hera2.jpg', 'Hera refined sketch 2')">
+                <img width="40%" src="magic-wand/refined-sketches/hera2.jpg">
+                <div class="title">Hera refined sketch 2</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('magic-wand/refined-sketches/tahamina1.jpg', 'Tahamina refined sketch 1')">
+                <img width="40%" src="magic-wand/refined-sketches/tahamina1.jpg">
+                <div class="title">Tahamina refined sketch 1</div>
+            </div>
+            <p>
+                Tahamina's first refined sketch explored how the page would look when the user first goes to unlock their phone. This
+                inspired the styling for our application, with the wand being the center piece on the welcome screen, with a the title
+                being a subtle hint to the user that a spell will need to be cast to proceed.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                Tahamina's second refined sketch explored how the ability to edit both sound and gestures would be presented to the user.
+                As we discussed together, once the phone was unlocked, there would be a configurations page like this sketch, where the
+                user can navigate to the pages provided in my own refined sketches, allowing them to update the sound or gesture being used.
+                Another helpful element of this sketch was the consistent styling between the home page and this page, which we understood
+                would be important for the best possible user experience.
+            </p>
+            <div class="image-container" (click)="openImageDialog('magic-wand/refined-sketches/tahamina2.jpg', 'Tahamina refined sketch 2')">
+                <img width="40%" src="magic-wand/refined-sketches/tahamina2.jpg">
+                <div class="title">Tahamina refined sketch 2</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="title">Video + Final Product</h3>
+        <iframe id="youtubeVideo" width="90%" height="300px" src="https://www.youtube.com/embed/aVS0ZnpewBI" frameborder="0" allowfullscreen></iframe>
+        <h5>Final implementation</h5>
+        <p>
+            description
+        </p>
+        <h5>Division of work</h5>
+        <p>
+            description
+        </p>
+        <h5>How does our application fit the objective?</h5>
+        <p>
+            description
+        </p>
+        <h5>What worked and what didn't work</h5>
+        <p>
+            description
+        </p>
+    </div>
+
+    <div class="section">
+        <h3 class="title">Live App + Source Code</h3>
+        <a href="https://alexdalgleishmorel.github.io/581-project2/">LIVE APP</a>
+        <a href="https://github.com/alexdalgleishmorel/581-project2">SOURCE CODE</a>
+    </div>
+</div>
