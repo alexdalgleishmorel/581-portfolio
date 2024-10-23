@@ -4,15 +4,21 @@
     <div class="section">
         <h3 class="title">Description</h3>
         <p>
-            paragraph
+            This project explores a new way of unlocking your phone, that leverages the existing sensors of a user's
+            mobile device. For our project, a priority of ours was to rely on more than one sensor input, thus ensuring
+            better security based on the increased complexity, while also preventing accidental unlocks.
 
             <br/><br/>
 
-            paragraph
+            Our implementation is inspired by the power of magic! Through our ideation process, we came up with the idea
+            of the user's device being a magic wand. In order to unlock the phone, they must cast a spell.
 
             <br/><br/>
 
-            paragragh
+            Casting a spell comes in two distinct steps: saying the name of the spell, then waving the wand correctly. Our
+            implementation does exactly that. It first verifies if the user said the correct spell name using the microphone,
+            then detects whether the user waves their phone like a wand in the correct way using the gyroscope. If the spell is
+            cast correctly, the phone unlocks!
         </p>
     </div>
 
@@ -255,19 +261,39 @@
         <iframe id="youtubeVideo" width="90%" height="300px" src="https://www.youtube.com/embed/aVS0ZnpewBI" frameborder="0" allowfullscreen></iframe>
         <h5>Final implementation</h5>
         <p>
-            description
+            For our final implementation, the user is greated at the main locked screen. They must first press the unlock
+            button before beginning to try to cast the correct spell. Then, they have 5 seconds to say the correct word. Upon
+            saying the correct word, they then have 10 seconds to wave their phone in the correct gesture. If either the verbal
+            or physical action is not matched in the given time, they are returned to the locked screen.
+
+            <br/><br/>
+
+            Upon successful unlock, the user can then navigate to the edit page, where they can configure the password to be
+            a new spell name, a new gesture, or both!
         </p>
         <h5>Division of work</h5>
         <p>
-            description
+            For this project, myself and Hera tackled the logic of the application. Hera's primary role was detecting the correct
+            gesture using device motion events. Meanwhile, I tackled the audio detection of the spell name, along with the edit pages
+            for both spell names and gestures. Tahamina was responsible for the general application structure and styling. All these
+            separate contributions came together perfectly to form the application in a super efficient manner!
         </p>
         <h5>How does our application fit the objective?</h5>
         <p>
-            description
+            Our application fits the object by providing a novel way to unlock the phone that is also engaging and fun for the user.
+            Furthermore, although the actions required for unlock are quite simple, the layered approach that requires several steps
+            to occur in sequence helped to guarantee security within the unlock process, avoiding any accidental unlocks.
         </p>
         <h5>What worked and what didn't work</h5>
         <p>
-            description
+            The aesthetics and general theme of the application worked quite well, combining both an audio detection of the
+            spell name with the gesture detection was a great pairing that allowed us to achieve security with a very simple
+            design.
+            <br/>
+            One thing that would have been great to expand upon for the application would be to have a wider set of gestures
+            that were supported, to allow the user the opportunity to have a more unique passcode. Similarly, giving the
+            user the ability to type in their own spell name would be helpful for enabling each user to have a unique unlock
+            sequence.
         </p>
     </div>
 
