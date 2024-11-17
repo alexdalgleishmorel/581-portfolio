@@ -15,6 +15,11 @@ export class DataService {
       displayName: 'Magic Wand',
       displayPhotoName: 'magic-wand/magic-wand.png'
     },
+    {
+      urlName: 'mirror-proxemics',
+      displayName: 'Mirror Proxemics',
+      displayPhotoName: 'mirror-proxemics/mirror-proxemics.png'
+    },
   ];
 
   constructor() {}

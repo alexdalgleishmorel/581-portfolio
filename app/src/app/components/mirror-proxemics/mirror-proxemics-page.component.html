@@ -1,0 +1,214 @@
+<div class="content">
+    <h1>Mirror Proxemics</h1>
+
+    <div class="section">
+        <h3 class="title">Description</h3>
+        <p>
+            The motivation of this project was to solve an issue about how content is curated and advertised to me. I've
+            found recently that I get advertisements for clothing and accessories that I have no interest in, strictly since
+            I'd liked a certain post, or may have visited certain websites. This feels like it has taken away the personal aspect
+            of what it means to truly like something.
+
+            <br/><br/>
+
+            For the mirror proxemics project, the idea is to curate content based on the user's physical reaction to the content,
+            to allow for the most personalized experience possible. The mirror is designed to help its users visualize how certain
+            clothing and accessories would look on them, and help them to curate a list of clothes that they truly like and think looks
+            good on them. Ultimately, this curated list can be what they use to go out and buy the items.
+
+            <br/><br/>
+
+            A user approaches the user, and a facial recognition scan determines their identity, and pulls their profile information if
+            it exists, otherwise a new profile is created. If the user begins close to the mirror, smaller accessories are then displayed
+            on them. When the user reacts positively, that accessory is added to their list of liked items. When reacting in an non-happy
+            expression, the item is ignored or removed from the liked list if it was previously there.
+
+            <br/>
+
+            Next, the user can move further away from the mirror. At that point, larger accessories like shirts, jackets, dresses and hoodies
+            are displayed on the user. They can then react again to curate those items. When they are done, they can use the mobile app to go
+            through their results. If a new user approaches the mirror, a new profile is loaded and the process repeats.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3 class="title">10 Initial Sketches</h3>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/initial-sketches/IMG_5501.jpg', 'Media curation by expression')">
+                <img width="200px" src="mirror-proxemics/initial-sketches/IMG_5501.jpg">
+                <div class="title">Media curation by expression</div>
+            </div>
+            <p>
+                This idea was one of the main motivations behind the mirror project. It pursues a
+                different way of curating media content based on the facial expression of the user. This
+                type of reaction-based on content creation feels much more authentic and better captures
+                whether a user truly likes the media they are consuming.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This idea again focused on social media and improving ease of use. Specifically, I struggle
+                when watching videos while moving around my home, specifically in terms of being able to hear
+                what is being said. If the distance of the user from the device was tracked, the volume could
+                be adjusted accordingly so that the content can always be heard.
+            </p>
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/initial-sketches/IMG_5502.jpg', 'Distance-based sound')">
+                <img width="200px" src="mirror-proxemics/initial-sketches/IMG_5502.jpg">
+                <div class="title">Distance-based sound</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/initial-sketches/IMG_5503.jpg', 'Light control')">
+                <img width="200px" src="mirror-proxemics/initial-sketches/IMG_5503.jpg">
+                <div class="title">Light control</div>
+            </div>
+            <p>
+                This idea was inspired by the Alexa at my home. We can ask Alexa to toggle on lights within our home,
+                but anything with a dimmer cannot be controlled, and we have to speak to make it happen. This proxemics
+                interaction would allow the user to look at a light, and then make a gesture to control the level of intensity
+                of the light.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This idea utilizes identification within proxemics as a way of protecting youth against media that shouldn't
+                be consumed for someone their age. By identifying the user, their age can be determined, and in turn, the content
+                displayed on surrounding devices could be sensored to remove any content deemed inappropriate by their guardian.
+            </p>
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/initial-sketches/IMG_5504.jpg', 'Content sensoring')">
+                <img width="200px" src="mirror-proxemics/initial-sketches/IMG_5504.jpg">
+                <div class="title">Content sensoring</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/initial-sketches/IMG_5505.jpg', 'Dog door')">
+                <img width="200px" src="mirror-proxemics/initial-sketches/IMG_5505.jpg">
+                <div class="title">Dog door</div>
+            </div>
+            <p>
+                This idea leverages identification and distance to optimize dog doors. The concept is that the door would open
+                under two conditions. First, the animal approaches must be identified to be the pet registered by the family. Also,
+                the pet must be within a certain distance of the door before it opens, to ensure the door is only opened briefly, when
+                necessary.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This was the first idea for the proxemic mirror. It was inspired by the original idea of curating social media content
+                based on the user's reaction. I felt that this could be taken a step further into the physical world, by curating
+                physical content. This would solve a problem I stuggle with, by reducing the difficulty of having to try on new clothes, by
+                making that process as easy as possible.
+            </p>
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/initial-sketches/IMG_5506.jpg', 'Mirror concept 1')">
+                <img width="40%" src="mirror-proxemics/initial-sketches/IMG_5506.jpg">
+                <div class="title">Mirror concept 1</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/initial-sketches/IMG_5507.jpg', 'Mirror concept 2')">
+                <img width="40%" src="mirror-proxemics/initial-sketches/IMG_5507.jpg">
+                <div class="title">Mirror concept 2</div>
+            </div>
+            <p>
+                This idea further explores the proxemic mirror, by incorporating distance-based tracking into its functionality. Specifically,
+                when the user approaches closer to the mirror, the clothing they try on becomes smaller accessories like necklaces, glasses, hats, etc. When
+                they move away from the mirror, they are shown larger items like shirts, jackets, etc.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This idea explores a meeting room that has been enhanced by proxemics. Specifically, the attendees of the meeting
+                are identified by their facial features, and in turn, the content of the meeting is displayed based on that group of
+                people. This could be used to optimize meetings to only show points that are relevant to the specific attendees involved.
+            </p>
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/initial-sketches/IMG_5508.jpg', 'Meeting room')">
+                <img width="40%" src="mirror-proxemics/initial-sketches/IMG_5508.jpg">
+                <div class="title">Meeting room</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/initial-sketches/IMG_5509.jpg', 'Health mirror')">
+                <img width="40%" src="mirror-proxemics/initial-sketches/IMG_5509.jpg">
+                <div class="title">Health mirror</div>
+            </div>
+            <p>
+                This idea was another ideation on a proxemics-based smart mirror. This mirror would again leverage distance and
+                identification to remind users of important aspects of their health. When the user is close to the mirror, they would
+                be displayed detailed information on the status of their health. When far away from the user, less text would appear,
+                and instead by replaced with larger icons, for example a big water droplet to remind them to drink more water.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This last idea was to have a camera positioned with an over-arching view of a swimming pool. The camera would identify
+                at-risk users by taking into account their identification to correlate their swimming ability, distance away from the nearest
+                exit, their facial expressions, and even how they are interacting with other swimmers. All this data could be aggregated and
+                analyzed to determine if swimmers were at risk of drowning, and real lifeguards could then be notified in advance.
+            </p>
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/initial-sketches/IMG_5510.jpg', 'Proxemics lifeguard')">
+                <img width="40%" src="mirror-proxemics/initial-sketches/IMG_5510.jpg">
+                <div class="title">Proxemics lifeguard</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="title">Storyboarding</h3>
+        <div class="flex-column">
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/storyboarding/IMG_5511.jpg', 'Storyboard 1')">
+                <img width="100%" src="mirror-proxemics/storyboarding/IMG_5511.jpg">
+                <div class="title">Storyboard 1</div>
+            </div>
+            <p>
+                In this first story, the user is just like me and is stuggling to imagine how certain clothes will look on them. They approach
+                the proxemics mirror, and once close enough, potential clothes are super-imposed over their body. The user is pleased
+                with the shirt they see in the mirror, and they smile. Their smile is processed as a postive reaction to the clothing, and
+                the shirt is added to their currated list of liked items.
+            </p>
+        </div>
+        <div class="flex-column">
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/storyboarding/IMG_5512.jpg', 'Storyboard 2')">
+                <img width="100%" src="mirror-proxemics/storyboarding/IMG_5512.jpg">
+                <div class="title">Storyboard 2</div>
+            </div>
+            <p>
+                In this second story, the user is continuing with their mirror experience. This time, an article is displayed that they do not
+                like, and the mirror detects an unhappy response to the article. A new piece of cloting is immediately displayed, and the user
+                preferences are updated to reflect the user did not like that article, to improve future clothing suggestions for that specific user.
+            </p>
+        </div>
+        <div class="flex-column">
+            <div class="image-container" (click)="openImageDialog('mirror-proxemics/storyboarding/IMG_5513.jpg', 'Storyboard 3')">
+                <img width="100%" src="mirror-proxemics/storyboarding/IMG_5513.jpg">
+                <div class="title">Storyboard 3</div>
+            </div>
+            <p>
+                In this third story, the user approaches very close to the mirror. They are then presented with a detailed necklace, which they smile at
+                the sight of, and in turn the necklace is added to their list of liked items. The user then scrolls through their liked items, and taps on
+                the newly-added necklace. This navigates them to the vendor, where they are able to purchase the item. Lasty, a new user approaches the mirror. They
+                are identified as an existing user, and their preferences are loaded into the system, and an outfit currated for them is promptly super-imposed. The curation
+                process then repeats itself for this new user.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="title">Video + Final Product</h3>
+        <iframe id="youtubeVideo" width="90%" height="300px" src="https://www.youtube.com/embed/aVS0ZnpewBI" frameborder="0" allowfullscreen></iframe>
+        <h5>Final implementation</h5>
+        <p>
+        </p>
+        <h5>How does our application fit the objective?</h5>
+        <p>
+        </p>
+        <h5>What worked and what didn't work</h5>
+        <p>
+        </p>
+    </div>
+
+    <div class="section">
+        <h3 class="title">Live App + Source Code</h3>
+        <a href="https://alexdalgleishmorel.github.io/581-project3/">LIVE APP</a>
+        <a href="https://github.com/alexdalgleishmorel/581-project3">SOURCE CODE</a>
+    </div>
+</div>

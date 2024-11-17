@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 import { TaleOfTwoButtonsPageComponent } from './components/tale-of-two-buttons-page/tale-of-two-buttons-page.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { MagicWandComponent } from './components/magic-wand/magic-wand.component';
+import { MirrorProxemicsPageComponent } from './components/mirror-proxemics/mirror-proxemics.component';
 
 export const routes: Routes = [
     {
@@ -16,5 +17,9 @@ export const routes: Routes = [
     {
         path: 'magic-wand',
         component: MagicWandComponent
+    },
+    {
+        path: 'mirror-proxemics',
+        component: MirrorProxemicsPageComponent
     }
 ];
