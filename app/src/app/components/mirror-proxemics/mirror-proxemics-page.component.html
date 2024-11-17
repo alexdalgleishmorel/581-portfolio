@@ -23,7 +23,7 @@
             on them. When the user reacts positively, that accessory is added to their list of liked items. When reacting in an non-happy
             expression, the item is ignored or removed from the liked list if it was previously there.
 
-            <br/>
+            <br/><br/>
 
             Next, the user can move further away from the mirror. At that point, larger accessories like shirts, jackets, dresses and hoodies
             are displayed on the user. They can then react again to curate those items. When they are done, they can use the mobile app to go
@@ -194,15 +194,42 @@
 
     <div class="section">
         <h3 class="title">Video + Final Product</h3>
-        <iframe id="youtubeVideo" width="90%" height="300px" src="https://www.youtube.com/embed/aVS0ZnpewBI" frameborder="0" allowfullscreen></iframe>
+        <iframe id="youtubeVideo" width="90%" height="300px" src="https://www.youtube.com/embed/ax2v70w0zj8" frameborder="0" allowfullscreen></iframe>
         <h5>Final implementation</h5>
         <p>
+            This project was ultimately implemented as an Angular application, leveraging the faceapi.js library. Using this library, the app
+            is capable of facial identification, facial expression interpretation, and the ability to calculate the distance the user is from
+            the user based on the size of the bounding box of their face.
+
+            <br/><br/>
+
+            Combining all these features together, the faceapi.js library provided all the core functionality required for it to be relatively
+            seemless experience for new users. In the provided demo video, a group of my friends are interacting with the mirror for the first time,
+            but they don't have touch the application at all, they simply interact with the mirror by moving around and changing their expression.
         </p>
-        <h5>How does our application fit the objective?</h5>
+        <h5>How does the application fit the objective?</h5>
         <p>
+            This application achieves all the core objectives outlined in the storyboard. Different users that approach the mirror are identified, and
+            their relevant profile information is loaded. When they are close to the mirror, they experiment with glasses, hats, sunglasses, scarfs, necklaces, etc. As
+            they move further away, they try on sports jerseys, dresses, coats, shirts and more. All this without requiring any markings or other placements
+            that would stray away from an organic exprience where the only object is the mirror itself.
         </p>
         <h5>What worked and what didn't work</h5>
         <p>
+            The facial recognition worked well for identifying users, as well as determing how far away they were from the mirror. This allowed
+            for a positive exprience for the user where they could allow themselves to truly imagine how the clothing would look on them, which
+            was the core objective.
+
+            <br/><br/>
+
+            The facial expression detection was something that could be improved upon. Although it was easy to discern when a user was smiling, it was
+            much harder to determine if they disliked an article of clothing. If this could be more accurate, the users would not have to make such
+            exaggerated gestures to show the mirror they didn't like the item. This would likely lead to more accurate curration results as well.
+
+            <br/><br/>
+
+            Additionally, if given more time, I would like to have added more backend functionality to the facial recognition. For example, determining if
+            the user was male or female, and currating initial clothing suggestions based on that assumption for a better user experience.
         </p>
     </div>
 
