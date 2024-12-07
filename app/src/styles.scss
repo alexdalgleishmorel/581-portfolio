@@ -11,3 +11,16 @@ mat-form-field {
 router-outlet {
     height: 0;
 }
+
+.home-bar {
+    width: 100%;
+
+    padding-left: 30px;
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+}

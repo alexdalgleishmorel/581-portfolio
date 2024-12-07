@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 import { ModalComponent } from '../modal/modal.component';
 import { DataService } from '../../service/data.service';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-magic-wand',
   standalone: true,
-  imports: [],
+  imports: [
+    MatButtonModule,
+    MatIconModule,
+    MatDialogModule
+  ],
   templateUrl: './magic-wand.component.html',
   styleUrl: './magic-wand.component.scss'
 })

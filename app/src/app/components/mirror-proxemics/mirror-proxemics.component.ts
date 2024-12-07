@@ -3,11 +3,15 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 import { DataService } from '../../service/data.service';
 import { ModalComponent } from '../modal/modal.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-mirror-proxemics-page',
   standalone: true,
   imports: [
+    MatButtonModule,
+    MatIconModule,
     MatDialogModule
   ],
   templateUrl: './mirror-proxemics-page.component.html',
