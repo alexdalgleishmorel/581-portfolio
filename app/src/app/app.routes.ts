@@ -4,6 +4,7 @@ import { TaleOfTwoButtonsPageComponent } from './components/tale-of-two-buttons-
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { MagicWandComponent } from './components/magic-wand/magic-wand.component';
 import { MirrorProxemicsPageComponent } from './components/mirror-proxemics/mirror-proxemics.component';
+import { SmartDoorPageComponent } from './components/smart-door/smart-door.component';
 
 export const routes: Routes = [
     {
@@ -21,5 +22,9 @@ export const routes: Routes = [
     {
         path: 'mirror-proxemics',
         component: MirrorProxemicsPageComponent
+    },
+    {
+        path: 'smart-door',
+        component: SmartDoorPageComponent
     }
 ];

@@ -1,0 +1,316 @@
+<div class="content">
+    <h1>Smart Door</h1>
+
+    <div class="section">
+        <h3 class="title">Description</h3>
+        <p>
+            The motivation of this project was to solve a common household problem that both myself and my group member Justin
+            face on a daily basis. Our pets are always wanting to come in and out of the house! Beyond the laborious aspect of this
+            issue, we also find ourselves constantly worrying if we'd remembered to let our pet back inside. These two problems
+            take up a lot of time in the day, and can even cause us to lose sleep at times.
+
+            <br/><br/>
+
+            Our smart door physical prototype is designed to solve that issue in a seemless way. It automates the task of letting your 
+            pet in and out of the house, by providing a mechanism to open the dog door via remote from anywhere in the house. When they
+            want to come back inside, an ultrasonic sensor detects their presence and the door opens once again to let them back in.
+            while providing an easy-to-use companion app as an interface to track the status of your pet.
+
+            <br/><br/>
+
+            For peace of mind, this product also comes with a companion app to track the status of your pet, along with other helpful features.
+            The app shows whether or not your pet is inside or outside, provides a graphical visualization of when your pet tends to be coming
+            in and out of the house during the day, and also displays important reminders tailored to the behaviour of your pet.
+
+            <br/><br/>
+
+            Our physical prototype also includes other helpful additions, such as a fan that activates when the pet comes back inside, so that
+            it can cool off after running around on a hot summer's day. Additionally, the device includes 2 LED lights that display the current
+            state of the door. The red light indicates the door is locked and your pet is inside, while the blue light indicates that your pet is
+            currently outside. All these features work together to provide a strong product that solves the original problem we discussed.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3 class="title">10 Initial Sketches</h3>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('smart-door/initial-sketches/IMG_5607.jpg', 'Dimming bedtime light')">
+                <img width="200px" src="smart-door/initial-sketches/IMG_5607.jpg">
+                <div class="title">Dimming bedtime light</div>
+            </div>
+            <p>
+                This idea was to solve a problem I face on almost a daily basis, where I stay up way too late working on some
+                sort of project. One of the main reasons I believe this is an issue is because I leave all the lights on in my
+                house, so my body doesn't realize I should be sleeping. This would help solve that issue by automatically dimming
+                the light late at night to help transition into a sleepier state.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This idea is based on a common joke I see online a lot, about how many people that work from home wish they could just
+                pretend to be online and nobody would notice. The technical aspect of how to trick a device into thinking a real human
+                was interacting with it was something that I thought would be interesting to explore for a physical prototype.
+            </p>
+            <div class="image-container" (click)="openImageDialog('smart-door/initial-sketches/IMG_5608.jpg', 'Teams active mouse')">
+                <img width="200px" src="smart-door/initial-sketches/IMG_5608.jpg">
+                <div class="title">Teams active mouse</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('smart-door/initial-sketches/IMG_5609.jpg', 'Phone light cover')">
+                <img width="200px" src="smart-door/initial-sketches/IMG_5609.jpg">
+                <div class="title">Phone light cover</div>
+            </div>
+            <p>
+                This idea was also inspired by an issue I have with separating healthy sleeping habits from over-endulging with technology.
+                Specifically, I find I get many phone notifications while I'm sleeping, and if my phone is facing up, this can light up the
+                entire room when the screen brightens and wakes me up. The idea here was to have some sort of device that covers your phone during
+                sleeping hours automatically, so that light cannot escape.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                At my home, we have a large skylight in the kitchen, and when it rains, if we aren't fast some rain will sneak into the house and
+                get the floor wet. Based on this concern, this physical protoype would explore different ways of detecting weather conditions outside,
+                and adaptively react to open or close based on what is happening.
+            </p>
+            <div class="image-container" (click)="openImageDialog('smart-door/initial-sketches/IMG_5610.jpg', 'Rain sensing window')">
+                <img width="200px" src="smart-door/initial-sketches/IMG_5610.jpg">
+                <div class="title">Rain sensing window</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('smart-door/initial-sketches/IMG_5611.jpg', 'Weight sensor snooze alarm')">
+                <img width="200px" src="smart-door/initial-sketches/IMG_5611.jpg">
+                <div class="title">Weight sensor snooze alarm</div>
+            </div>
+            <p>
+                This idea tackles a common issue I have, which is waking up in the morning. I find I can easily snooze my alarm and continue sleeping, 
+                leading to some unproductive days. This device would play an alarm until the user put their full weight on it. As a result, this
+                device would demand the user gets all the way up to turn off the alarm, making sure I never wake up late.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                Sometimes I struggle to drink enough water of the course of a day. This physical prototype was an idea to explore how to enforce the 
+                proper amount of water was drank on any given day. The idea was the bottle would glow brighter the longer it hadn't been interacted with,
+                encouraging the user to interact with it and in turn, drink more water.
+            </p>
+            <div class="image-container" (click)="openImageDialog('smart-door/initial-sketches/IMG_5612.jpg', 'Water bottle prototype')">
+                <img width="40%" src="smart-door/initial-sketches/IMG_5612.jpg">
+                <div class="title">Water bottle prototype</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('smart-door/initial-sketches/IMG_5613.jpg', 'Key holder')">
+                <img width="40%" src="smart-door/initial-sketches/IMG_5613.jpg">
+                <div class="title">Key holder</div>
+            </div>
+            <p>
+                This idea tackles the problem of losing your keys in the home. This prototype would serve as a device that holds your keys. When
+                the device detects that your keys are inside the house, but not in the holder, it will play a noise to get you to put your
+                keys on it. This would encourage the user to consistently place their keys in the same spot, helping to stop them from losing them
+                when they're in a rush.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                An aspect of electric ovens I like quite a bit is the light that indicates the cooking surface is hot. At home, we have a gas stove,
+                and when cooking with large pans I sometimes do not see the flame. As a result, I've made the mistake in the past of burning myself
+                by grabbing something I didn't realize was hot. This implementation would detect hot areas, and visually indicate to gas stove users
+                which areas are hot.
+            </p>
+            <div class="image-container" (click)="openImageDialog('smart-door/initial-sketches/IMG_5614.jpg', 'Gas stove heat sensor')">
+                <img width="40%" src="smart-door/initial-sketches/IMG_5614.jpg">
+                <div class="title">Gas stove heat sensor</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('smart-door/initial-sketches/IMG_5615.jpg', 'Trash bin full')">
+                <img width="40%" src="smart-door/initial-sketches/IMG_5615.jpg">
+                <div class="title">Trash bin full</div>
+            </div>
+            <p>
+                This idea was to tackle an issue I have with garbage bins in the home that have lids. I never know when they're full. For this
+                implementation, we'd have a way of detecting when the bins contents were beginning to overflow, and the lid would then indicate to
+                the user either via audio or a light, or both, that the bin needs to be emptied.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This last idea was inspired by forgetting to bring my laptop to school during the semester. It is a crucial item I need in my backpack
+                everyday, or else I can't get work done. So this idea explored a backpack that sensed which items were inside of it, and notified their
+                users by either an audio or visual indication if it didn't detect any of the required items. This way, I wouldn't be able to forget to
+                bring my laptop to school as easily.
+            </p>
+            <div class="image-container" (click)="openImageDialog('smart-door/initial-sketches/IMG_5616.jpg', 'Smart backpack')">
+                <img width="40%" src="smart-door/initial-sketches/IMG_5616.jpg">
+                <div class="title">Smart backpack</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="title">10 Refined Sketches</h3>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('smart-door/refined-sketches/IMG_5617.jpg', 'Alex refined sketch 1')">
+                <img width="40%" src="smart-door/refined-sketches/IMG_5617.jpg">
+                <div class="title">Alex refined sketch 1</div>
+            </div>
+            <p>
+                The pet door idea came around as we discussed our intial sketches. This was the first sketch drawn up for the pet door door by myself.
+                It was to clearly define its main purpose, in that it needs to raise for the pet when it was close, and also re-lower as the pet
+                left the area. All further refinements needed to build off this idea as the driving functionality, and find ways to further enhance the
+                experience, while still preserving this first interaction.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This sketch explores how we could ensure the implementation beyond just a physical prototype. Specifically, it was the first idea
+                that explored finding a way to give the user peace of mind, by knowing what was going on with the door at all times. This refinement
+                led to the requirement of having some sort of companion app for the user to receive these notifications.
+            </p>
+            <div class="image-container" (click)="openImageDialog('smart-door/refined-sketches/IMG_5618.jpg', 'Alex refined sketch 2')">
+                <img width="40%" src="smart-door/refined-sketches/IMG_5618.jpg">
+                <div class="title">Alex refined sketch 2</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('smart-door/refined-sketches/IMG_5619.jpg', 'Alex refined sketch 3')">
+                <img width="40%" src="smart-door/refined-sketches/IMG_5619.jpg">
+                <div class="title">Alex refined sketch 3</div>
+            </div>
+            <p>
+                This refinement tackled an issue our group discussed, which is how we would differentiate between our own pets and wild animals. How
+                would the door know when to open in these cases? One idea was to delegate that task the user themselves. When the proximity sensor
+                detected something outside, an image of the entity would be sent to the user, who could then make the final decision as to whether the
+                door should open or not. Again, this idea further emphasized the importance of having a companion app to go with the door.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This refinement was based on a discussion our group had where we realized that the pet coming in and out of the house would produce
+                a large amount of meaningful data over time. If this data could be captured, users could gain insights into how often their pets go out,
+                during which times of the day, and for how long. These metrics would greatly enhance a user's experience with the door, and further neccesitated
+                the importance of else developing a companion app.
+            </p>
+            <div class="image-container" (click)="openImageDialog('smart-door/refined-sketches/IMG_5620.jpg', 'Alex refined sketch 4')">
+                <img width="40%" src="smart-door/refined-sketches/IMG_5620.jpg">
+                <div class="title">Alex refined sketch 4</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('smart-door/refined-sketches/IMG_5621.jpg', 'Alex refined sketch 5')">
+                <img width="40%" src="smart-door/refined-sketches/IMG_5621.jpg">
+                <div class="title">Alex refined sketch 5</div>
+            </div>
+            <p>
+                This refined sketch was inspired by an issue I have with my own dog on occasion, where he won't stay outside for as long as we
+                feel like he should be when it's a nice day outside. This idea explored having a way to configure how long the door remained closed,
+                so your pet couldn't physically come back into the home until the timer had expired.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This sketch was motivated by the fear I believe every pet owner has on occasion. During the winter, we don't ever want to forget to
+                let our pets inside. The idea for this refinement was that our door would have a temperature sensor incorporated, so that if the temperature
+                dropped below a certain value, an audio queue would activate to encourage the pet to come back inside.
+            </p>
+            <div class="image-container" (click)="openImageDialog('smart-door/refined-sketches/IMG_5622.jpg', 'Alex refined sketch 6')">
+                <img width="40%" src="smart-door/refined-sketches/IMG_5622.jpg">
+                <div class="title">Alex refined sketch 6</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('smart-door/refined-sketches/IMG_5623.jpg', 'Efren refined sketch 1')">
+                <img width="40%" src="smart-door/refined-sketches/IMG_5623.jpg">
+                <div class="title">Efren refined sketch 1</div>
+            </div>
+            <p>
+                This refined sketch by Efren was also based on our intial discussion about implementing a pet door. It also tackled the common
+                issue of indentifying when something was a approaching, and also identifying exactly what it was. This refinement led to
+                a number of productive conversations to determine exactly what was essential when it came to detecting objects approaching the door.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                This refined sketch by Efren explored how we would react differently to approaching objects based on the time of the day. This way
+                a user could configure times of the day where it did not expect things to be approaching the door, so that visual and audio alarms could
+                trigger if something did approach at these times to help protect the owner and their pets.
+            </p>
+            <div class="image-container" (click)="openImageDialog('smart-door/refined-sketches/IMG_5624.jpg', 'Efren refined sketch 2')">
+                <img width="40%" src="smart-door/refined-sketches/IMG_5624.jpg">
+                <div class="title">Efren refined sketch 2</div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="image-container" (click)="openImageDialog('smart-door/refined-sketches/IMG_5626.jpg', 'Justin refined sketch 1')">
+                <img width="40%" src="smart-door/refined-sketches/IMG_5626.jpg">
+                <div class="title">Justin refined sketch 1</div>
+            </div>
+            <p>
+                Justin's first refined sketch explored a key feature that we ended up implementing for the final product. Specifically, we the proximity
+                sensor only works for when it pet is coming back inside, but we needed an easy way for the pet to be able to exit the home. This
+                refinement provided that solution by suggesting that we could include a remote system that allowed the user to open the door for their pet
+                without having to get up.
+            </p>
+        </div>
+        <div class="flex-row">
+            <p>
+                Justin's second refined sketch explored how we could leverage a temperature sensor to protect our pets during harsh weather conditions. This
+                sketch provided an idea that we could block the door from operating at all if the outside temperature violated a certain accepted range. This way,
+                owners could protect their pets from going outside during times where it may be too dangerous for them to be exposed to the conditions.
+            </p>
+            <div class="image-container" (click)="openImageDialog('smart-door/refined-sketches/IMG_5627.jpg', 'Justin refined sketch 2')">
+                <img width="40%" src="smart-door/refined-sketches/IMG_5627.jpg">
+                <div class="title">Justin refined sketch 2</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="title">Video + Final Product</h3>
+        <iframe id="youtubeVideo" width="90%" height="300px" src="https://www.youtube.com/embed/TdvQewqD6_o" frameborder="0" allowfullscreen></iframe>
+        <h5>Final implementation</h5>
+        <p>
+            This project was ultimately implemented with the following features: a remote control system to open the door manually, an ultrasonic sensor to trigger
+            the door to open from the outside, a servo motor to operate the door, LED lights to indicate the current state of the door, and lastly, a companion mobile
+            app to display the state of the door, historical data and notifications.
+
+            <br/><br/>
+
+            Combining all these features together, this final implementation provides a complete way for users to manage letting their pet in and out of home, with
+            redundancies included such as the manual control via the remote, and enhancements included as well such as the companion app.
+        </p>
+        <h5>How does the application fit the objective?</h5>
+        <p>
+            The initial problem discussed by our group was that our pets were always wanting to come in and out of the house, and that we
+            find ourselves constantly worrying if we'd remembered to let our pet back inside. The physical prototype provides a solution that does
+            not require the user to have to move a muscle to let their pet out or in, achieving that first objective. Furthermore, the companion app
+            provides a way to easily check on the status of your pet, eliminating any worries the user may have, and thereby achieving that second objective.
+        </p>
+        <h5>What worked and what didn't work</h5>
+        <p>
+            The door mechanism worked very well, we found the speed and responsiveness in which it opened provided a product that functionally achieved exactly
+            what it needed to, and the door opened reliably whenever it needed to. The added features of the companion app and the cooling fan also helped to
+            add another dimension to our final product that helped give it the extra wow-factor we were looking for.
+
+            <br/><br/>
+
+            The identification of pets coming in from outside is something we could improve upon. Specifically, for the current implementation, there would be
+            no way to detect the difference between your pet cat versus a grizzly bear, and both would be let into the home. An improvement would be to add some
+            sort of facial identification logic to the auto-entry sequence so that the door could be personalized to only let registered pets inside.
+
+            <br/><br/>
+
+            Also, if we were given more time, connecting the companion app to the device via bluetooth would also have taken the implementation to the next level. In
+            its current form, the state of the companion app had to be manually toggled for the sake of the demonstration, rather than actually being
+            connected to the device to receive real-time notifications.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3 class="title">Source Code</h3>
+        <a href="https://github.com/alexdalgleishmorel/581-project4">SOURCE CODE</a>
+    </div>
+</div>

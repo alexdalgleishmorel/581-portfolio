@@ -20,6 +20,11 @@ export class DataService {
       displayName: 'Mirror Proxemics',
       displayPhotoName: 'mirror-proxemics/mirror-proxemics.png'
     },
+    {
+      urlName: 'smart-door',
+      displayName: 'Smart Door',
+      displayPhotoName: 'smart-door/smart-door.jpg'
+    },
   ];
 
   constructor() {}
