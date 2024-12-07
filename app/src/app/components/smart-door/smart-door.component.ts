@@ -5,6 +5,7 @@ import { DataService } from '../../service/data.service';
 import { ModalComponent } from '../modal/modal.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-smart-door-page',
@@ -18,7 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './smart-door.component.scss'
 })
 export class SmartDoorPageComponent {
-  constructor(private dataService: DataService, private dialog: MatDialog) {}
+  constructor(private dataService: DataService, private dialog: MatDialog, private router: Router) {}
 
   openImageDialog(imageUrl: string, imageTitle: string) {
     this.dialog.open(ModalComponent, {
@@ -27,5 +28,9 @@ export class SmartDoorPageComponent {
         imageTitle: imageTitle
       }
     })
+  }
+
+  navigateTo(url: string) {
+    this.router.navigate([url]);
   }
 }

@@ -5,6 +5,7 @@ import { ModalComponent } from '../modal/modal.component';
 import { DataService } from '../../service/data.service';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-magic-wand',
@@ -18,7 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './magic-wand.component.scss'
 })
 export class MagicWandComponent {
-  constructor(private dataService: DataService, private dialog: MatDialog) {}
+  constructor(private dataService: DataService, private dialog: MatDialog, private router: Router) {}
 
   openImageDialog(imageUrl: string, imageTitle: string) {
     this.dialog.open(ModalComponent, {
@@ -27,5 +28,9 @@ export class MagicWandComponent {
         imageTitle: imageTitle
       }
     })
+  }
+
+  navigateTo(url: string) {
+    this.router.navigate([url]);
   }
 }
